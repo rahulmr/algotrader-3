@@ -16,6 +16,27 @@ from datetime import datetime
 import importlib
 import finances
 
+#*******************************************************************************************#
+#*******************************************************************************************#
+#
+# Get user input
+#
+#*******************************************************************************************#
+#*******************************************************************************************#
+print("Let's choose your own trading algorithm")
+print("Rank on a scale from 1-10 the importance of the following criteria when selecting a coin")
+print("The reccommended coin will be displayed based on your preferences")
+print("Click any button to continue")
+next = input
+print("Volatility of coin in recent days (1-10)")
+volatility_score = input()
+print("Volume increase of coin in recent days (1-10)")
+volume_score = input()
+print("Price deviation from recent days (1-10)")
+deviation_score = input()
+
+
+
 
 my_bittrex = Bittrex('******',
                      '00b08625bdfc4c979af2e39b4179b4d9')
