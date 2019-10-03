@@ -23,7 +23,7 @@ from iexfinance.stocks import get_market_volume
 #print(get_symbols(output_format='pandas', token="sk_0dd8d49d32934da19f88ee888e351e06"))
 
 # print(get_symbols(output_format='pandas', token="pk_724d60693a9f485986c0ebc9cbb66fdd"))
-token="sk_0dd8d49d32934da19f88ee888e351e06"
+token="#####"
 listOfStocks = ['XLF','QQQ','VXX','FXI','EWZ','EFA','EEM','SQQQ']
 
 for stock in listOfStocks:
