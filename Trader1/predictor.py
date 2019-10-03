@@ -25,7 +25,7 @@ class Predictor:
         profits = float(p.read())
         new_data = []
         for z in y:
-            my_bittrex = Bittrex('535221f7425749ce8b147f70cbf43d19', '00b08625bdfc4c979af2e39b4179b4d9')
+            my_bittrex = Bittrex('####', '#####')
             market = "BTC-"+z['coin']
             price_btc = my_bittrex.get_ticker(market)['result']['Ask']
             new_prices = z['data']['prices']
@@ -109,7 +109,7 @@ class Predictor:
             xlm_market,tusd_market,doge_market,zec_market,neo_market,xem_market,solve_market,bat_market,dgb_market,xvg_market
         ]
     my_markets = ['BTC-ETH','BTC-XRP','BTC-RVN','BTC-BSV','BTC-ADA','BTC-LTC','BTC-BCH','BTC-TRX','BTC-XMR','BTC-SPND','BTC-XLM','BTC-TUSD','BTC-ZEC','BTC-NEO','BTC-XEM','BTC-SOLVE','BTC-BAT','BTC-DGB','BTC-XVG',]
-    my_bittrex = Bittrex('535221f7425749ce8b147f70cbf43d19', '00b08625bdfc4c979af2e39b4179b4d9')
+    my_bittrex = Bittrex('####', '####')
     while len(all_markets_prices[0]) < 2:
         i=0
         for market in my_markets:
