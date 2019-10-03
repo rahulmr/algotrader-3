@@ -74,7 +74,7 @@ profits = float(p.read())
 
 def buyCoin(coin):
     my_bittrex = Bittrex('******',
-                         '00b08625bdfc4c979af2e39b4179b4d9')
+                         '####')
     market = 'BTC-' + coin
     price_btc = my_bittrex.get_ticker(market)['result']['Ask']
     finance = finances.Finances()
@@ -236,7 +236,7 @@ def updateBuyingScore():
 #*******************************************************************************************#
 def removeFromLedger(price):
     my_bittrex = Bittrex('******',
-                         '00b08625bdfc4c979af2e39b4179b4d9')
+                         '#####')
 
     new_ledger_list = ledger_list[:] = [
         d for d in ledger_list if d.get('price') != price]
@@ -253,7 +253,7 @@ def removeFromLedger(price):
 #*******************************************************************************************#
 def updateTracer(coin, price, size):
     my_bittrex = Bittrex('******',
-                         '00b08625bdfc4c979af2e39b4179b4d9')
+                         '#####')
 
     x = {'coin': coin, 'price': price, 'size': size}
     # print(x)
