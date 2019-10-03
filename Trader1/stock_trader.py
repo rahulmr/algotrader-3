@@ -20,14 +20,14 @@ from iexfinance.stocks import get_market_volume
 # import importlib
 # import finances
 
-#print(get_symbols(output_format='pandas', token="sk_0dd8d49d32934da19f88ee888e351e06"))
+#print(get_symbols(output_format='pandas', token="###"))
 
-# print(get_symbols(output_format='pandas', token="pk_724d60693a9f485986c0ebc9cbb66fdd"))
+# print(get_symbols(output_format='pandas', token="###"))
 token="#####"
 listOfStocks = ['XLF','QQQ','VXX','FXI','EWZ','EFA','EEM','SQQQ']
 
 for stock in listOfStocks:
-    stockName = Stock(stock,token='sk_0dd8d49d32934da19f88ee888e351e06')
+    stockName = Stock(stock,token='####')
     #print(stock,stockName.get_quote())
     # print(stockName.get_previous_day_prices())
 
