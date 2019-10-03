@@ -108,7 +108,7 @@ def getPredictions():
     new_data = []
     for z in y:
         my_bittrex = Bittrex('******',
-                             '00b08625bdfc4c979af2e39b4179b4d9')
+                             '####')
         market = "BTC-" + z['coin']
         price_btc = my_bittrex.get_ticker(market)['result']['Ask']
         new_prices = z['data']['prices']
@@ -167,7 +167,7 @@ def getPredictions():
 #*******************************************************************************************#
 def updateBuyingScore():
     my_bittrex = Bittrex('******',
-                         '00b08625bdfc4c979af2e39b4179b4d9')
+                         '#####')
 
     my_markets = ['BTC-ETH', 'BTC-XRP', 'BTC-RVN', 'BTC-BSV', 'BTC-ADA', 'BTC-LTC', 'BTC-BCH', 'BTC-TRX', 'BTC-XMR',
                   'BTC-SPND', 'BTC-XLM', 'BTC-TUSD', 'BTC-ZEC', 'BTC-NEO', 'BTC-XEM', 'BTC-SOLVE', 'BTC-BAT', 'BTC-DGB', 'BTC-XVG', ]
@@ -300,7 +300,7 @@ def updateProfitsSpent(amount):
 #*******************************************************************************************#
 def checkCoin(coin, price, size):
     my_bittrex = Bittrex('******',
-                         '00b08625bdfc4c979af2e39b4179b4d9')
+                         '#####')
 
     market = 'BTC-' + coin
     price_btc = my_bittrex.get_ticker(market)['result']['Ask']
@@ -367,7 +367,7 @@ my_markets_data = ['ETH', 'XRP', 'RVN', 'BSV', 'ADA', 'LTC', 'BCH', 'TRX', 'XMR'
                    'SPND', 'XLM', 'TUSD', 'ZEC', 'NEO', 'XEM', 'SOLVE', 'BAT', 'DGB', 'XVG', ]
 for market in my_markets_data:
     link = "https://min-api.cryptocompare.com/data/histohour?fsym=" + market + \
-        "&tsym=BTC&limit=10&api_key={c9179662969879a869846053d20a99a63c11d86263e47e1b5330630a7b12a895}"
+        "&tsym=BTC&limit=10&api_key={######}"
     f = urlopen(link)
     x = f.read()
     y = json.loads(x)
